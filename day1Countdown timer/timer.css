@@ -1,0 +1,68 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url(bg.jpg);
+  object-fit: cover;
+}
+
+.countdown-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Episode styling */
+.episode {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for all episodes */
+.episode:hover {
+  background-color: #ffebcd;
+  box-shadow: 0 4px 12px rgba(255, 69, 0, 1);
+  transform: translateY(-5px);
+}
+
+/* Title styling */
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Timer styling */
+.timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff5722;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+/* Timer hover effect for cleaner design */
+.episode:hover .timer {
+  background-color: #ff5722;
+  color: white;
+}
